@@ -1,0 +1,145 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+#unity-container {
+  position: absolute;
+  max-width: 800px;
+}
+#unity-closer-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.unity-mobile {
+  width: 100%;
+}
+.unity-mobile #unity-closer-wrapper {
+  position: absolute;
+  top: 3px;
+}
+#unity-closer-wrapper a {
+  color: #666 !important;
+  font-family: arial;
+  text-decoration: none;
+  padding-left: 0.2rem;
+  display: block;
+  float: left;
+  margin-top: 17px;
+}
+.unity-mobile #unity-closer-wrapper a {
+  color: #fff !important;
+  opacity: 1;
+  padding-left: 5px;
+  margin-top: 3px;
+  font-family: arial;
+  font-size: 0.9rem;
+  padding-left: 0.6rem;
+}
+#unity-close-button {
+  float: right;
+  width: 38px;
+  height: 38px;
+  background-color: #666;
+  background-size: 50%;
+  mask-position: 17px 17px;
+  -webkit-mask-position: 17px 17px;
+  -webkit-mask-image: url(rectangle-xmark-regular.svg);
+  mask-image: url(rectangle-xmark-regular.svg);
+  mask-size: 50%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 50%;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.unity-mobile #unity-close-button {
+  background: url(rectangle-xmark-regular.svg) no-repeat;
+  background-size: 50%;
+  background-position: 15px 3px;
+  margin-top: -3px;
+  opacity: 0.5;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+#unity-container.unity-desktop {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#unity-container.unity-mobile {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+}
+#unity-canvas {
+  background: #231f20;
+}
+.unity-mobile #unity-canvas {
+  width: 100%;
+  height: 100%;
+}
+#unity-loading-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#unity-logo {
+  width: 154px;
+  height: 130px;
+  background: url('unity-logo-dark.png') no-repeat center;
+}
+#unity-progress-bar-empty {
+  width: 141px;
+  height: 18px;
+  margin-top: 10px;
+  margin-left: 6.5px;
+  background: url('progress-bar-empty-dark.png') no-repeat center;
+}
+#unity-progress-bar-full {
+  width: 0%;
+  height: 18px;
+  margin-top: 10px;
+  background: url('progress-bar-full-dark.png') no-repeat center;
+}
+#unity-footer {
+  position: relative;
+}
+.unity-mobile #unity-footer {
+  display: none;
+}
+#unity-webgl-logo {
+  float: left;
+  width: 204px;
+  height: 38px;
+  background: url('webgl-logo.png') no-repeat center;
+}
+#unity-build-title {
+  float: right;
+  margin-right: 10px;
+  line-height: 38px;
+  font-family: arial;
+  font-size: 18px;
+}
+#unity-fullscreen-button {
+  float: right;
+  width: 38px;
+  height: 38px;
+  background: url('fullscreen-button.png') no-repeat center;
+}
+#unity-warning {
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  background: white;
+  padding: 10px;
+  display: none;
+}
